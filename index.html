@@ -1,67 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioFarm Maestro OU</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
-    }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4fff4; color: #222; }
     header {
-      background-color: #003366;
-      color: white;
+      background: #ffffff;
+      color: #2e7d32;
       padding: 30px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 4px solid #ffeb3b;
+    }
+    header h1 { margin: 0; font-size: 2em; color: #2e7d32; }
+    header p { margin: 5px 0; font-size: 0.95em; color: #666; }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #2e7d32;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffeb3b; }
+    .hero {
+      background: url('https://storage.googleapis.com/kaggle-datasets-images/29742/37902/3bee7b882b4f0f4a597a6a13a6e75ff2/dataset-card.jpeg?t=2018-06-03-02-43-13') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: zoomSlow 12s ease-in-out infinite alternate;
+    }
+    .hero h2 {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px 40px;
+      border-radius: 12px;
+      color: #2e7d32;
+      font-size: 2.5em;
+      text-align: center;
+      border: 4px solid #ffeb3b;
+    }
+    .section {
+      padding: 60px 20px;
       text-align: center;
     }
-    section {
+    .section h3 {
+      font-size: 2em;
+      color: #2e7d32;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .section h3::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #ffeb3b;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+    .section p {
+      font-size: 1.1em;
       max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
+      margin: 0 auto;
+      color: #444;
     }
     footer {
-      background-color: #003366;
+      background: #2e7d32;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 25px;
+      font-size: 0.95em;
+    }
+    @keyframes zoomSlow {
+      0% { background-size: 100%; }
+      100% { background-size: 110%; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <div>
+      <h1>BioFarm Maestro OU</h1>
+      <p>tn 8 Tallinn 13811 Estonia | contact@biomaestro.shop | +37258315462</p>
+    </div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+  <div class="hero">
+    <h2>Your Natural Path to Wellness</h2>
+  </div>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
-    </div>
-  </section>
+  <div class="section">
+    <h3>Organic Innovation</h3>
+    <p>At BioFarm Maestro OU, we specialize in producing plant-based solutions rooted in the harmony of nature and science. Our formulas are carefully developed to meet modern wellness needs while preserving environmental integrity and purity.</p>
+  </div>
+
+  <div class="section">
+    <h3>Health & Sustainability</h3>
+    <p>We believe in creating better health for people and the planet. Our sustainable practices ensure that every product we offer contributes positively to both human well-being and ecological balance.</p>
+  </div>
+
+  <div class="section">
+    <h3>Trusted Quality</h3>
+    <p>Our commitment to excellence is unwavering. Each BioFarm Maestro product undergoes rigorous testing and is backed by transparency, consistency, and trusted care for every customer.</p>
+  </div>
 
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    <p>© 2025 BioFarm Maestro OU. All rights reserved.</p>
   </footer>
 </body>
 </html>
